@@ -3,8 +3,112 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		body {background-color: powderblue;}
+		h1  {color: red;}
+		p {color: blue;}	
+	</style>
+	<script>
+		function myFunction {
+			Document.getElementById("demo").innerHTML = "hello javascript"
+		}
+
+	</script>
+
+
 </head>
 <body>
+	<a href="url"> link text</a>  <!-- un link de texto-->
+	<a href="https://www.w3schools.com/">Visit our HTML tutorial</a>   <!-- un link que abre en la misma pagina  -->
+	<a href="https://www.w3schools.com/" target="blank">Visit w3shool</a>   <!-- un link que abre otra pestaña  -->
+	<a href="default.asp"></a>           <!-- un enlace con una imagen -->
+			<img src="smiley.gif" alt="html tutorial"
+		style="width:42px; height:42px; border:0;">
+		</a>
+	<table style="width:100%">  <!-- esto es una tabla -->
+		<tr>
+			<th>Firs Name </th>
+			<th>Lastname</th>
+			<th></th>
+		</tr>
+		<tr>
+			<th>Jill</th>
+			<th>Smith</th>
+			<th>50</th>
+		</tr>
+		<tr>
+			<th>Eve</th>
+			<th>Jackson</th>
+			<th>94</th>
+		</tr>
+		</table>
+	<ul>
+		<li>Coffe</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<ol>Coffe</ol>
+	<ol>Tea</ol>
+	<ol>Milk</ol>
+	<h1>ELEMENTOs DE BLOQUE DIVY SPAN  </h1>  <!--  el span es tambien un elemento de bloque pero sirve para resaltar cosas mas pequeñas  -->
+	<div style="background-color:black; color:white; padding:20px;">
+		<head>London</head>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur inventore ut, eligendi quos doloremque sint quia veritatis, temporibus ad recusandae accusantium laudantium, error sunt saepe harum culpa impedit iste. Quaerat!</p>
+	</div>
+	<h1> My <span style="color:red">Important</span>Heading</h1>
+	<img src="imagen.jpg" width="40%">
+	<img src="images/imagen.jpg" width="50%">
+	<img src="images/imagen.jpg" width="60%">
+	<img src="../imagen.jpg" width="70%">
+	<h1>FORMULARIOS</h1>   <!-- ingresamos informacion por medio de elementos llamados inputs y hay varios como texto, radiobuttom.  submit para neviar la informacion -->
+	<form>
+		Firs name: <br>
+		<input type="tex" name="firsname"><br>
+		Last Name: <br>
+		<input type="text" name="lastname">
+
+	</form>
+		<hr>
+	<form action="/action_page.php" method="get">
+		<input type="radio" name="gender" value="male" checked=""> male <br>
+		<input type="radio" name="gender" value="female"> female <br>
+		<input type="radio" name="gender" value="Other" checked=""> Other <br>
+		<input type="submit" value"enviar">
+	</form>  
+	<form>
+		<select name="cars">   <!-- esto es un menu desplegable  -->
+			<option value="volvo"></option>
+			<option value="">Saab</option>
+			<option value="">Fiat</option>
+			<option value="">Audi</option>
+		</select>
+	</form>
+	<form>
+		<textarea name="comentarios" rows="10" cols"30" placeholder="esto es un mensaje por defecto">
+		
+		</textarea>		
+	</form>
+	<form>
+		<button type="button" onclick="alert ('hola mundo')"> click aqui </button>
+
+	</form>
 	
+
+
 </body>
 </html>
+
+<!-- 
+
+	* para generar varias etiquetas de las mismas con sublimetext con el emmet instalado hacemos lo siguiente: a*5ctrl+e  genera 5 etiquetas href
+	* hacer los enlaces con el tarjet blank sirve para SEO pero 
+	* puede haber un css dentro del HTML y con hojas externas
+	* ../   quiere decir que me lleva a la carpeta inmediatamente anterior 
+	* en el head se pueden definir estilos y tambien llamarlos 
+	* metodo get : para ir a la misma pagina donde estoy. por medio de la URL muestra al usuario la informacion que se esta enviando
+	* metodo post: manda la informacion de forma anonima y mas segura. aunque los hackers son unas biblias y tambien lo interceptan, pero 
+	* FIELSET es de diseño es para agrupar elementos de formulario
+
+-->
+
+<!-- -->
